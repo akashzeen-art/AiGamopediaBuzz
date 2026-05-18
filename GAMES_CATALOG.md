@@ -1,4 +1,4 @@
-# Poker 365 - Games Catalog
+# AiGameopedia - Games Catalog
 
 ## API Configuration
 
