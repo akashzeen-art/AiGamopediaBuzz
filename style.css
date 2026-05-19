@@ -1340,6 +1340,11 @@ footer {
   }
   .navSmall {
     display: flex;
+    align-items: center;
+    gap: 12px;
+  }
+  .langBtnMobile {
+    display: inline-block;
   }
   .subMenu {
     padding: 75px 10vw 120px 80vw;
@@ -1629,4 +1634,7 @@ body.rtl ul {
 .langBtn:hover {
   background: goldenrod !important;
   color: #000 !important;
+}
+.langBtnMobile {
+  display: none;
 }
