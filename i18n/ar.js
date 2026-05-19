@@ -5,6 +5,7 @@ window.I18N_AR = {
   navMoreGames: 'المزيد من الألعاب',
   navMyAccount: 'حسابي',
   navTC: 'الشروط والأحكام',
+  langSwitch: 'English',
   // Index - Section 1
   sec1Tagline: 'العب دائماً',
   sec1Des: 'ارتقِ باكتشافك للألعاب',

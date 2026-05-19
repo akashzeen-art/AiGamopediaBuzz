@@ -107,12 +107,25 @@
     });
   }
 
+  function setLangButtonHref() {
+    // Map current page filename to its counterpart in the other language
+    var pageFile = pathname.split('/').pop() || 'index.html';
+    if (!pageFile.includes('.')) pageFile = 'index.html';
+    var enHref = appBasePath + '/' + pageFile;
+    var arHref = appBasePath + '/ar/' + pageFile;
+    var targetHref = isAr ? enHref : arHref;
+    document.querySelectorAll('.langBtn').forEach(function (btn) {
+      btn.setAttribute('href', targetHref);
+    });
+  }
+
   if (document.readyState === 'loading') {
     document.addEventListener('DOMContentLoaded', function () {
       setDocumentDirection();
       applyI18n();
       fixInternalLinks();
       fixFormLinks();
+      setLangButtonHref();
       if (typeof window.onI18nReady === 'function') window.onI18nReady();
     });
   } else {
@@ -120,6 +133,7 @@
     applyI18n();
     fixInternalLinks();
     fixFormLinks();
+    setLangButtonHref();
     if (typeof window.onI18nReady === 'function') window.onI18nReady();
   }
 })();
