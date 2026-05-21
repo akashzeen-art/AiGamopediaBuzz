@@ -47,7 +47,7 @@ window.I18N_AR = {
   filterTop10: 'أفضل 10 ألعاب',
   filterEasyToPlay: 'سهلة اللعب',
   filterArcade: 'أركيد',
-  filterPuzzle: 'أحجية',
+  filterPuzzle: 'ألغاز',
   filterAction: 'أكشن',
   // My Account
   myAccountTitle: 'حسابي',
